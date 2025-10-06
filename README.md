@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+The frontend of a full-featured Task Management System, built with React + TypeScript. It provides a clean and responsive interface for creating, organizing, collaborating, and tracking tasks. The system integrates with the backend to support authentication, comments, and analytics dashboards.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
 
-Currently, two official plugins are available:
+  Authentication
+  
+  Login & Registration
+  
+  Token-based session handling
+  
+  Task Management
+  
+  Create, view, update, and delete tasks
+  
+  Add tags, priorities, due dates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Collaboration through comments
 
-## React Compiler
+  Task assignments between users
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  ## Analytics Dashboard
 
-## Expanding the ESLint configuration
+  📊 Overview (task count by status/priority)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  📈 Task Trends (created vs completed over time)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  👤 User Performance Metrics UI/UX
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  Responsive & modern design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  Scrollable task list
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  Dropdowns, modals, and interactive components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  ## Technologies Used
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  React 19 → Core library for building fast and reusable user interfaces.
+
+React Redux 9 → Official React bindings for Redux, enabling seamless state management across components.
+
+Axios 1 → Promise-based HTTP client for making API requests and handling responses.
+
+Formik 2 → Simplifies form handling by managing form state, validation, and submission.
+
+Yup 1 → Schema-based validation library, commonly used with Formik for form validation.
+
+Recharts 3 → Charting library built on React, used for creating responsive and interactive data visualizations.
