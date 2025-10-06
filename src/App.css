@@ -1,0 +1,18 @@
+/* utils */
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.contentPadding {
+	padding-inline: 20px;
+	padding-block: 30px;
+}

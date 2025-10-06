@@ -1,0 +1,40 @@
+.customInput {
+	border: none;
+	outline: none;
+	flex: 1;
+	font-size: 16px;
+	background-color: transparent;
+}
+
+.customInputLabel {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.errorMessage {
+	display: block;
+	color: red;
+	margin-bottom: 8px;
+}
+
+.customInputWrapper {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding: 10px 11px; /* similar to AntD input */
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	background-color: #fff;
+	transition: all 0.2s ease;
+}
+
+.customInputWrapper:focus-within {
+	border-color: #40a9ff;
+	box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.hideButton {
+	border: none;
+	background-color: transparent;
+	height: 18px;
+}

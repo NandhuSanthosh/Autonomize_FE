@@ -1,0 +1,10 @@
+.heading {
+	font-weight: 600;
+	font-size: 35px;
+}
+
+.inputWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}

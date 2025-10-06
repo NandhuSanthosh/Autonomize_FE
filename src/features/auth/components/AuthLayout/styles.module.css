@@ -1,0 +1,47 @@
+.authPageLayout {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.contentWrapper {
+	padding-inline: 30px;
+	padding-block: 50px;
+
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 4;
+}
+
+.sidePanel {
+	flex: 5;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	padding: 20px;
+	position: relative;
+}
+
+.logo {
+	width: 90px;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+
+@media (max-width: 900px) {
+	.sidePanel {
+		display: none;
+	}
+
+	.contentWrapper {
+		justify-content: center;
+	}
+
+	.logo {
+		top: -10px;
+		left: 10px;
+	}
+}
